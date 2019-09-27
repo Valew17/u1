@@ -1,16 +1,42 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Developer from "./Developer";
+import Login from './Login';
+import Menu from './Menu';
+
 
 class App extends React.Component {
+
     render() {
+
+        let menu = [
+            {
+                name: 'Главная',
+                url: '/',
+            },
+            {
+                name: 'Уроки',
+                url: '/lessons',
+            },
+            {
+                name: 'Практика',
+                url: '/trud',
+            },
+            {
+                name: 'Компоненты',
+                url: '/components',
+            },
+            {
+                name: 'Контакты',
+                url: '/contact',
+            }
+        ]
+
         return <div>
-            <h1>Ура! Я почти познал React )))</h1>
-            <p>Но еще много учиться(</p>
+            <h1>Сервис по ReactJS</h1>
+            <Login />
+            <Menu info={menu}/>
         </div>
     }
 }
-
-new Developer('Лев');
 
 ReactDOM.render(<App/>, document.querySelector("#root"));
