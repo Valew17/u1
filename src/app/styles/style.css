@@ -1,0 +1,47 @@
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.header {
+    background-color: #aee8ea;
+    height: 50px;
+    padding: 22px;
+    border-radius: 0 0 10px 10px;
+    color: #5d5d5d;
+}
+.modal {
+    background-color: #fffcd5;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px #aee7ea;
+    height: 40px;
+}
+.modalClose {
+    background-color: #e84e4e;
+    float: right;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+.post {
+    border: solid 1px #e8e8e8;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+}
+.postName {
+    font-size: 25px;
+    text-decoration: underline;
+    color: #5d5d5d;
+    margin: 0 0 10px 10px;
+    cursor: pointer;
+}
+.postName:hover {
+    text-decoration:none;
+}
+
+.postText {
+    font-size: 18px;
+}
