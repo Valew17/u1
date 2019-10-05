@@ -1,20 +1,19 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 
-export default class Post extends Component {
+export default class Comment extends Component {
     render() {
 
-        const { title, body, id} = this.props;
+        const { name, email, body, id} = this.props;
 
         return (
             <div className="card border-secondary mb-3">
                 <div className="card-header">
-                    <Link to={`/posts/${id}`}>
-                        {title}
+                    <Link to={`/comments/${id}`}>
+                        {name} - {email}
                     </Link>
                 </div>
                 <div className="card-body text-secondary">
-                    <p>{title}</p>
                     <p>{body}</p>
                 </div>
             </div>
